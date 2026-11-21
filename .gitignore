@@ -14,8 +14,3 @@ Thumbs.db
 node_modules/
 dist/
 .DS_Store
-
-# Jangan upload file rahasia kalau ada
-.env
-.env.local
-firebase-debug.log
