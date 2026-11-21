@@ -1,0 +1,33 @@
+NARA STUDIO - CANVAS LUKIS DIGITAL
+Hak Cipta (Copyright) © 2026 Nara Studio. All Rights Reserved.
+
+PEMILIK LISENSI:
+Aplikasi ini dibuat dan dimiliki sepenuhnya oleh pengembang Nara Studio.
+Kode, desain, ikon, template, dan semua aset di dalam folder ini adalah
+karya original yang dibuat untuk aplikasi ini.
+
+YANG BOLEH:
+- Menginstall dan menggunakan aplikasi untuk keperluan pribadi / keluarga
+- Mengupload aplikasi ini ke Google Play Store atas nama pengembang
+- Mengupdate dan mengembangkan aplikasi ini
+
+YANG TIDAK BOLEH TANPA IZIN TERTULIS:
+- Menyalin, menjual kembali, atau mendistribusikan ulang kode / aset aplikasi ini
+  sebagai aplikasi lain atas nama pihak lain
+- Mengklaim aplikasi ini sebagai karya pihak lain
+- Mengambil template / ikon / desain Nara Studio untuk dipakai di aplikasi lain
+
+TEKNOLOGI PIHAK KETIGA:
+- Aplikasi ini dibuat dengan bantuan AI (Meta AI) - hasil generate AI ini
+  bebas digunakan secara komersial oleh pengembang, tanpa royalti ke Meta AI.
+- Tool pembungkus PWABuilder / Bubblewrap yang dipakai untuk membuat file .AAB
+  adalah open-source (MIT) dan gratis digunakan.
+- Font sistem yang dipakai adalah font standar open-source / sistem.
+
+TANGGUNG JAWAB:
+Aplikasi disediakan "sebagaimana adanya" (as-is) untuk tujuan edukasi dan hiburan keluarga.
+
+Untuk izin penggunaan di luar ketentuan di atas.
+E-mail : izzibull@gmail.com
+
+© 2026 Nara Studio. All Rights Reserved.

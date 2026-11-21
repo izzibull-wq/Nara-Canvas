@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=Baloo+2:wght@500;600;700;800&family=Caveat:wght@500;600;700&family=Anton&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito:wght@600;700;800;900&family=Bungee&family=Poppins:wght@500;600;700;800&family=Bebas+Neue&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --surface:#121214;
+  --surface-2:#1a1a1a;
+  --surface-3:#242426;
+  --line:#2e2e32;
+  --text:#f4f2ff;
+  --muted:#a9a7b8;
+  --accent:#8b5cf6;
+  --accent-2:#c4b5fd;
+  --danger:#f87171;
+  --canvas-bg:#3a3a3e;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --surface:#121214; --surface-2:#1a1a1a; --surface-3:#242426; --line:#2e2e32; --text:#f4f2ff; --muted:#a9a7b8; }
+}
+*{ box-sizing:border-box; }
+html,body,#root{ margin:0; min-height:100%; }
+html{ -webkit-text-size-adjust:100%; }
+body{ font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,sans-serif; background:var(--surface); color:var(--text); overscroll-behavior-y:none; }
+.font-display{ font-family:"Space Grotesk","Plus Jakarta Sans",sans-serif; }
+button,input,select{ font:inherit; }
+button{ cursor:pointer; }
+input[type="range"]{ accent-color:var(--accent); }
+/* Touch targets: at least 44px on coarse pointers (finger / stylus). */
+@media (pointer:coarse){
+  button, input[type="color"], select{ min-height:44px; }
+  input[type="range"]{ height:44px; }
+  .touch44{ min-width:44px; min-height:44px; }
+}
+.touch44{ min-width:44px; min-height:44px; }
+.checker{
+  background-color:#fff;
+  background-image: linear-gradient(45deg,#d6d6d6 25%,transparent 25%),linear-gradient(-45deg,#d6d6d6 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#d6d6d6 75%),linear-gradient(-45deg,transparent 75%,#d6d6d6 75%);
+  background-size:22px 22px; background-position:0 0,0 11px,11px -11px,-11px 0;
+}
+.scroll-thin::-webkit-scrollbar{ width:6px; height:6px; }
+.scroll-thin::-webkit-scrollbar-thumb{ background:#3d3d44; border-radius:99px; }
+.no-scrollbar::-webkit-scrollbar{ display:none; }
+@keyframes pop{ from{ transform:translateY(6px); opacity:0 } to{ transform:translateY(0); opacity:1 } }
+.pop{ animation:pop .18s ease both; }
+@keyframes confettiFall{ 0%{ transform:translateY(-20px) rotate(0deg); opacity:1 } 100%{ transform:translateY(105vh) rotate(720deg); opacity:.7 } }
+.confetti-piece{ width:12px; height:18px; border-radius:3px; animation:confettiFall 3.2s ease-in infinite; }
+.kid-mode button{ min-height:44px; }
+/* Canvas stays crisp: the artwork keeps its own resolution, the browser
+   scales it to the viewport. Never let the frame exceed the viewport. */
+/* Rasio aspek canvas dikunci di inline style pembungkusnya (width & height
+   selalu canvasSize * zoom). Jangan pernah memotong salah satu sisinya
+   dengan max-width / max-height — itulah yang dulu menarik gambar. */
+.canvas-frame{ max-width:none; max-height:none; aspect-ratio:var(--canvas-aspect, 1 / 1); }
+.canvas-frame canvas{ width:100%; height:100%; object-fit:contain; image-rendering:auto; -webkit-tap-highlight-color:transparent; }
+.adaptive-shell{ width:100%; max-width:1800px; margin-left:auto; margin-right:auto; }
+@media (min-width:1441px){
+  body{ font-size:16px; }
+}
+@media (max-width:767px){
+  .adaptive-shell{ max-width:100%; }
+}
